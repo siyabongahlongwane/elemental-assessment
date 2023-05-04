@@ -1,0 +1,62 @@
+body {
+    margin: 0 !important;
+}
+
+body,
+.full-height {
+    height: 100%;
+}
+
+body,
+.full-width,
+.page-wrapper {
+    width: 100%;
+}
+
+// Navigation Bar Styles
+.navbar {
+    height: 130px;
+    width: 80%;
+    .logo-container {
+        max-width: 150px;
+    }
+    .menu-icon {
+        width: 22px;
+    }
+}
+
+// Flexbox styles
+.flex,
+.page-wrapper {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center,
+.navbar {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+// Layout sizes
+.boxed-width {
+    width: 90%;
+}
+
+.pointer {
+    cursor: pointer;
+}

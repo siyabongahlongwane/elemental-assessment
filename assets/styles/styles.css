@@ -1,0 +1,59 @@
+body {
+  margin: 0 !important;
+}
+
+body,
+.full-height {
+  height: 100%;
+}
+
+body,
+.full-width,
+.page-wrapper {
+  width: 100%;
+}
+
+.navbar {
+  height: 130px;
+  width: 80%;
+}
+.navbar .logo-container {
+  max-width: 150px;
+}
+.navbar .menu-icon {
+  width: 22px;
+}
+
+.flex,
+.page-wrapper {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center,
+.navbar {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.boxed-width {
+  width: 90%;
+}
+
+.pointer {
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
