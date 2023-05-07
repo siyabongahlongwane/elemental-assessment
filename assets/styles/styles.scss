@@ -58,18 +58,27 @@ body,
     justify-content: end;
 }
 
+.align-items-end {
+    align-items: end;
+}
+
 // Layout sizes
 .boxed-width {
     width: 88%;
 }
 
+.text-wrapper {
+    width: 72%;
+}
+
 // Slide
 .blue-banner {
     background-color: #244AC2;
-    height: 90px;
-    width: 400px;
+    height: 70px;
+    width: 440px;
     color: #fff;
     left: 0;
+    z-index: 2;
     h4 {
         text-transform: uppercase;
         margin: 0;
@@ -78,13 +87,26 @@ body,
 
 .slide-wrapper {
     height: 430px;
-    width: calc(100% - 100px);
+    width: calc(100% - 200px);
     .slide {
-        width: inherit;
-        height: inherit;
-        // background-color: pink;
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
+    .track-icons {
+        gap: 3px;
+        bottom: 15px;
+        right: 15px;
+        margin: 15px;
+        z-index: 3;
+    }
+    .active-slide {
+        margin: -.5px -1px !important;
+    }
+}
+
+.next-icon {
+    height: 70px;
 }
 
 .black-box {
@@ -104,8 +126,4 @@ body,
 
 .absolute-element {
     position: absolute;
-}
-
-.text-wrapper {
-    width: 65%;
 }

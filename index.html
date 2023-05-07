@@ -23,15 +23,20 @@
                 </div>
             </div>
             <!-- Slide Wrapper -->
-            <div class="flex flex-row full-width justify-end align-items-center relative-element">
-                <div class="absolute-element blue-banner flex flex-row justify-end align-items-center">
+            <div class="flex flex-row full-width justify-end align-items-center relative-element" id="carousel">
+                <div class="absolute-element blue-banner flex flex-row justify-end align-items-center pointer" onclick="next()">
                     <div class="text-wrapper">
                         <h4 id="slide-text"></h4>
                     </div>
-                    <img src="./assets/images/next.svg" alt="next icon" onclick="next()">
                 </div>
                 <div class="slide-wrapper flex flex-row justify-end justify-center align-items-center">
-                    <div class="slide flex flex-row full-width full-height" id="slide">
+                    <div class="flex flex-col full-width full-height justify-end justify-center align-items-center relative-element">
+                        <img class="full-width full-height pointer" id="slide" alt="slide">
+                        <div class="flex flex-row justify-end align-items-end absolute-element track-icons" id="trackerIcons">
+                        </div>
+                    </div>
+                    <div class="absolute-element">
+                        <img class="next-icon pointer" src="./assets/images/next.svg" alt="next icon" onclick="next()">
                     </div>
                 </div>
                 <div class="black-box"></div>
