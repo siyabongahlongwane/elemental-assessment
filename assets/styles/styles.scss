@@ -63,7 +63,7 @@ body,
     width: 88%;
 }
 
-// Slider
+// Slide
 .blue-banner {
     background-color: #244AC2;
     height: 90px;
@@ -76,13 +76,14 @@ body,
     }
 }
 
-.slider-wrapper {
+.slide-wrapper {
     height: 430px;
     width: calc(100% - 100px);
-    .slider {
+    .slide {
         width: inherit;
         height: inherit;
-        background-color: pink;
+        // background-color: pink;
+        background-size: cover;
     }
 }
 

@@ -72,14 +72,14 @@ body,
   margin: 0;
 }
 
-.slider-wrapper {
+.slide-wrapper {
   height: 430px;
   width: calc(100% - 100px);
 }
-.slider-wrapper .slider {
+.slide-wrapper .slide {
   width: inherit;
   height: inherit;
-  background-color: pink;
+  background-size: cover;
 }
 
 .black-box {
