@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 body {
   margin: 0 !important;
+  font-family: "Open Sans", sans-serif;
 }
 
 body,
@@ -14,14 +16,14 @@ body,
 }
 
 .navbar {
-  height: 130px;
+  height: 110px;
   width: 80%;
 }
 .navbar .logo-container {
   max-width: 150px;
 }
 .navbar .menu-icon {
-  width: 22px;
+  width: 20px;
 }
 
 .flex,
@@ -46,14 +48,58 @@ body,
   align-items: center;
 }
 
-.justify-content-center {
+.justify-center {
   justify-content: center;
 }
 
+.justify-end {
+  justify-content: end;
+}
+
 .boxed-width {
-  width: 90%;
+  width: 88%;
+}
+
+.blue-banner {
+  background-color: #244AC2;
+  height: 90px;
+  width: 400px;
+  color: #fff;
+  left: 0;
+}
+.blue-banner h4 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.slider-wrapper {
+  height: 430px;
+  width: calc(100% - 100px);
+}
+.slider-wrapper .slider {
+  width: inherit;
+  height: inherit;
+  background-color: pink;
+}
+
+.black-box {
+  background-color: black;
+  width: 100px;
+  height: 80px;
 }
 
 .pointer {
   cursor: pointer;
+}
+
+.relative-element {
+  position: relative;
+}
+
+.absolute-element {
+  position: absolute;
+}
+
+.text-wrapper {
+  width: 65%;
 }/*# sourceMappingURL=styles.css.map */
