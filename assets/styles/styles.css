@@ -121,4 +121,24 @@ body,
 
 .absolute-element {
   position: absolute;
+}
+
+.intro {
+  margin: 3em 0em;
+}
+.intro .intro-container {
+  width: calc(100% - 280px);
+}
+.intro .left-content {
+  width: 54%;
+}
+.intro .left-content p {
+  color: #061C2C;
+  margin: 0;
+  font-size: 15px;
+  text-decoration: underline;
+}
+.intro .right-content {
+  width: 25%;
+  margin-top: -60px;
 }/*# sourceMappingURL=styles.css.map */

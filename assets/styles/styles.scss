@@ -127,3 +127,23 @@ body,
 .absolute-element {
     position: absolute;
 }
+
+.intro {
+    .intro-container {
+        width: calc(100% - 280px);
+    }
+    margin: 3em 0em;
+    .left-content {
+        width: 54%;
+        p {
+            color: #061C2C;
+            margin: 0;
+            font-size: 15px;
+            text-decoration: underline;
+        }
+    }
+    .right-content {
+        width: 25%;
+        margin-top: -60px;
+    }
+}
