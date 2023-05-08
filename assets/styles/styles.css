@@ -68,7 +68,7 @@ body,
   width: 72%;
 }
 
-.width-32 {
+.container-width {
   width: 32.5%;
 }
 
@@ -77,8 +77,8 @@ body,
 }
 
 .blue-banner {
-  height: 70px;
-  width: 440px;
+  height: 15%;
+  width: 50%;
   color: #fff;
   left: 0;
   z-index: 2;
@@ -89,8 +89,7 @@ body,
 }
 
 .slide-wrapper {
-  height: 430px;
-  width: calc(100% - 200px);
+  width: 86%;
 }
 .slide-wrapper .slide {
   background-size: cover;
@@ -108,26 +107,14 @@ body,
   margin: -0.5px -1px !important;
 }
 
-.fade-in-image {
-  animation: fadeIn 1.5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .next-icon {
   height: 70px;
 }
 
 .black-box {
   background-color: black;
-  width: 100px;
-  height: 80px;
+  width: 7%;
+  height: 15%;
 }
 
 .pointer {
@@ -144,7 +131,7 @@ body,
 
 .intro-container,
 .navy-card-wrapper {
-  width: calc(100% - 280px);
+  width: 86%;
 }
 
 .navy-card-wrapper {
@@ -194,7 +181,7 @@ body,
 
 .action-button {
   padding: 5px 10px 5px 10px;
-  font-size: 12px;
+  font-size: 10px;
   color: white;
   font-weight: bold;
   width: 43%;
