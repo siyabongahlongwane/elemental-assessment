@@ -6,10 +6,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elemental Assessment</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
 </head>
 
 <body>
+    <!-- Page Wrapper -->
+    <div class="page-wrapper flex flex-row full-width">
+        <div class="flex flex-col full-width">
+            <!-- Navigation Bar -->
+            <div class="navbar-wrapper flex flex-row full-width justify-center">
+                <div class="navbar justify-content-between flex flex-row alig">
+                    <div class="logo-container flex flex-col">
+                        <a href="./index.html"><img class="full-width pointer" src="./assets/images/logo.svg" alt="Visio Logo"></a>
+                    </div>
+                    <img class="menu-icon pointer" src="./assets/images/hamburger-menu-con.svg" alt="Hamburger Menu">
+                </div>
+            </div>
+            <div class="flex flex-col gap-3em">
+                <!-- Slide Wrapper -->
+                <div class="flex flex-row full-width justify-end align-items-center relative-element" id="carousel" onclick="next()">
+                    <div class="absolute-element blue-banner flex flex-row justify-end align-items-center pointer">
+                        <div class="text-wrapper">
+                            <h4 id="slide-text"></h4>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper flex flex-row justify-end justify-center align-items-center">
+                        <div class="flex flex-col full-width full-height justify-end justify-center align-items-center relative-element">
+                            <img class="full-width full-height pointer" id="slide" alt="slide">
+                            <div class="flex flex-row justify-end align-items-end absolute-element track-icons" id="trackerIcons">
+                            </div>
+                        </div>
+                        <div class="absolute-element">
+                            <img class="next-icon pointer" src="./assets/images/next.svg" alt="next icon">
+                        </div>
+                    </div>
+                    <div class="black-box"></div>
+                </div>
 
+                <!-- Quick Intro -->
+                <div class="flex flex-col align-items-center full-width intro gap-3em">
+                    <div class="flex flex-row justify-content-between intro-container">
+                        <div class="flex flex-col left-content">
+                            <p class="grey-color">Visio is an investment management firm initially founded by Patrice Moyal in 2003. The nimble, highly focused and dynamic team manage assets across listed strategies for a diversified client base that includes some of the world’s
+                                largest and most sophisticated investors. </p>
+                        </div>
+                        <div class="flex flex-row right-content justify-end align-items-start">
+                            <img class="full-width" src="./assets/images/random-chars.svg" alt="random characters">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row justify-content-between navy-card-wrapper">
+                        <div class="flex flex-col width-32 gap-30">
+                            <div class="flex flex-col navy-bg  justify-content-between card">
+                                <img class="full-width" src="./assets/images/arrow-right.svg" alt="arrow-right">
+                                <h2 class="grey-color">
+                                    The Visio <br> Difference
+                                </h2>
+                            </div>
+                            <div class="flex flex-row justify-content-between action-button-wrapper">
+                                <div class="flex flex-row justify-content-between blue-bg action-button">
+                                    <small class="uppercase">Hedge Funds</small>
+                                    <img width="8px" src="./assets/images/arrow-right.svg" alt="arrow-right">
+                                </div>
+                                <div class="flex flex-row justify-content-between blue-bg action-button">
+                                    <small class="uppercase">Unit Tests</small>
+                                    <img width="8px" src="./assets/images/arrow-right.svg" alt="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col width-32 gap-30">
+                            <div class="flex flex-col navy-bg  justify-content-between card">
+                                <img class="full-width" src="./assets/images/arrow-right.svg" alt="arrow-right">
+                                <h2 class="grey-color">
+                                    Meet the <br>Visio Team
+                                </h2>
+                            </div>
+                            <div class="flex flex-row justify-content-between action-button-wrapper">
+                                <div class="flex flex-row justify-content-between blue-bg action-button">
+                                    <small class="uppercase">Segregted Mandates</small>
+                                    <img width="8px" src="./assets/images/arrow-right.svg" alt="arrow-right">
+                                </div>
+                                <div class="flex flex-row justify-content-between blue-bg action-button">
+                                    <small class="uppercase">Africa Funds</small>
+                                    <img width="8px" src="./assets/images/arrow-right.svg" alt="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col width-32 gap-30">
+                            <div class="flex flex-col navy-bg  justify-content-between card">
+                                <img class="full-width" src="./assets/images/arrow-right.svg" alt="arrow-right">
+                                <h2 class="grey-color">
+                                    Our Funds And <br> Investments
+                                </h2>
+                            </div>
+                            <div class="flex flex-row justify-content-between action-button-wrapper">
+                                <div class="flex flex-row justify-content-between blue-bg action-button">
+                                    <small class="uppercase">Fund Performance</small>
+                                    <img width="8px" src="./assets/images/arrow-right.svg" alt="arrow-right">
+                                </div>
+                                <div class="flex flex-row justify-content-between blue-bg action-button">
+                                    <small class="uppercase">Risk Management</small>
+                                    <img width="8px" src="./assets/images/arrow-right.svg" alt="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./assets/js/main.js"></script>
 
 </html>

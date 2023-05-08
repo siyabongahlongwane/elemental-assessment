@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+body {
+    margin: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body,
+.full-height {
+    height: 100%;
+}
+
+body,
+.full-width,
+.page-wrapper {
+    width: 100%;
+}
+
+// Navigation Bar Styles
+.navbar {
+    height: 110px;
+    width: 80%;
+    .logo-container {
+        max-width: 150px;
+    }
+    .menu-icon {
+        width: 20px;
+    }
+}
+
+// Flexbox styles
+.flex,
+.page-wrapper {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center,
+.navbar {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+// Layout sizes
+.boxed-width {
+    width: 88%;
+}
+
+.text-wrapper {
+    width: 72%;
+}
+
+.width-32 {
+    width: 32.5%;
+}
+
+.width-48 {
+    width: 48%;
+}
+
+// Slide
+.blue-banner {
+    height: 70px;
+    width: 440px;
+    color: #fff;
+    left: 0;
+    z-index: 2;
+    h4 {
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+
+.slide-wrapper {
+    height: 430px;
+    width: calc(100% - 200px);
+    .slide {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .track-icons {
+        gap: 3px;
+        bottom: 15px;
+        right: 15px;
+        margin: 15px;
+        z-index: 3;
+    }
+    .active-slide {
+        margin: -.5px -1px !important;
+    }
+}
+
+.fade-in-image {
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.next-icon {
+    height: 70px;
+}
+
+.black-box {
+    background-color: black;
+    width: 100px;
+    height: 80px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+// Positioning
+.relative-element {
+    position: relative;
+}
+
+.absolute-element {
+    position: absolute;
+}
+
+.intro-container,
+.navy-card-wrapper {
+    width: calc(100% - 280px);
+}
+
+.navy-card-wrapper {
+    margin-bottom: 2em;
+}
+
+.intro {
+    .left-content {
+        width: 58%;
+        p {
+            color: #061C2C;
+            margin: 0;
+            line-height: 1.6;
+        }
+    }
+    .right-content {
+        width: 30%;
+        margin-top: -60px;
+    }
+}
+
+.navy-bg {
+    background-color: #061C2C;
+}
+
+.card {
+    height: 100px;
+    padding: 20px;
+    color: #fff;
+    h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0;
+    }
+    img {
+        width: 30px;
+    }
+}
+
+.blue-bg,
+.blue-banner {
+    background-color: #244AC2;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.action-button {
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    width: 43%;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-3em {
+    gap: 4em;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
