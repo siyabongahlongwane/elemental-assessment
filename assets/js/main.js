@@ -72,4 +72,37 @@
         }
     }
 
+    // function initCardData() {
+    //     // Card Data
+    //     const cardData = [{
+    //             icon: `${folderDir}/arrow-right.png`,
+    //             text: 'the visio',
+    //             span: 'difference'
+    //         },
+    //         {
+    //             icon: `${folderDir}/arrow-right.png`,
+    //             text: 'meet the',
+    //             span: 'visio team'
+    //         },
+    //         {
+    //             icon: `${folderDir}/arrow-right.png`,
+    //             text: 'our funds and',
+    //             span: 'investments'
+    //         }
+    //     ];
+
+    //     cardData.forEach((currentCard, index) => {
+    //         let img = $('<div></div>', {
+    //             id: `slide-${index}`,
+    //             class: index == slideIndex ? 'pointer active-slide' : 'pointer',
+    //             // src: index == slideIndex ? `${folderDir}/active.png` : `${folderDir}/inactive.png`,
+    //             // width: index == slideIndex ? '20px' : '15px',
+    //         });
+    //         img.on("click", function() {
+    //             next(index);
+    //         });
+    //         img.appendTo($('#trackerIcons'));
+    //     })
+    // }
+
     document.querySelector("#trackerIcons").addEventListener("click", next)

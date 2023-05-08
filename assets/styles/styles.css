@@ -69,7 +69,6 @@ body,
 }
 
 .blue-banner {
-  background-color: #244AC2;
   height: 70px;
   width: 440px;
   color: #fff;
@@ -123,22 +122,95 @@ body,
   position: absolute;
 }
 
-.intro {
-  margin: 3em 0em;
-}
-.intro .intro-container {
+.intro-container,
+.navy-card-wrapper {
   width: calc(100% - 280px);
 }
+
+.navy-card-wrapper {
+  margin-bottom: 2em;
+}
+
 .intro .left-content {
-  width: 54%;
+  width: 58%;
 }
 .intro .left-content p {
   color: #061C2C;
   margin: 0;
-  font-size: 15px;
-  text-decoration: underline;
+  line-height: 1.6;
 }
 .intro .right-content {
   width: 25%;
   margin-top: -60px;
+}
+
+.navy-bg {
+  background-color: #061C2C;
+}
+
+.card {
+  height: 100px;
+  padding: 20px;
+  color: #fff;
+}
+.card h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
+.card img {
+  width: 30px;
+}
+
+.width-32 {
+  width: 32.5%;
+}
+
+.width-48 {
+  width: 48%;
+}
+
+.width-43 {
+  width: 43%;
+}
+
+.blue-bg,
+.blue-banner {
+  background-color: #244AC2;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.action-button {
+  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.gap-3em {
+  gap: 4em;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }/*# sourceMappingURL=styles.css.map */
