@@ -71,6 +71,14 @@ body,
     width: 72%;
 }
 
+.width-32 {
+    width: 32.5%;
+}
+
+.width-48 {
+    width: 48%;
+}
+
 // Slide
 .blue-banner {
     height: 70px;
@@ -101,6 +109,19 @@ body,
     }
     .active-slide {
         margin: -.5px -1px !important;
+    }
+}
+
+.fade-in-image {
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -142,12 +163,11 @@ body,
         p {
             color: #061C2C;
             margin: 0;
-            // font-size: 15px;
             line-height: 1.6;
         }
     }
     .right-content {
-        width: 25%;
+        width: 30%;
         margin-top: -60px;
     }
 }
@@ -157,7 +177,6 @@ body,
 }
 
 .card {
-    // width: 28%;
     height: 100px;
     padding: 20px;
     color: #fff;
@@ -170,14 +189,6 @@ body,
     img {
         width: 30px;
     }
-}
-
-.width-32 {
-    width: 32.5%;
-}
-
-.width-48 {
-    width: 48%;
 }
 
 .blue-bg,

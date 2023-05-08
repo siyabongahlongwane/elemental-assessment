@@ -16,7 +16,7 @@
     width: 48%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .navy-card-wrapper,
   .intro-container {
     flex-direction: column;
@@ -32,10 +32,6 @@
   .intro-container .right-content {
     width: 80%;
     margin-top: 0;
-  }
-  .intro-container .left-content img,
-  .intro-container .right-content img {
-    height: 70px;
   }
   .slide-wrapper {
     height: auto;

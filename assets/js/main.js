@@ -22,6 +22,7 @@
     let slideText = $("#slide-text");
     let carousel = $("#carousel");
     let slideIndex = 0;
+
     // Set Default Slide Image and Text
     const setCarouselData = (slideIndex) => {
         slide.attr("src", `${folderDir}/${carouselData[slideIndex]['path']}`);
@@ -34,14 +35,11 @@
     });
 
     // Go to the next slide
-    const next = (indx) => {
-        if (indx) {
-            slideIndex = indx;
-        } else if (slideIndex == carouselData.length - 1) {
-            slideIndex = 0;
-        } else {
-            slideIndex += 1;
-        }
+    const next = () => {
+        slide.animate({ opacity: '0.3', })
+        slideIndex = slideIndex == carouselData.length - 1 ? 0 : ++slideIndex;
+        console.log(slideIndex)
+        setTimeout(() => slide.animate({ opacity: '1' }), 150)
         slide.attr("src", `${folderDir}/${carouselData[slideIndex]['path']}`);
         slideText.html(`${carouselData[slideIndex]['text']}`);
         toggleTrackingIcons();
@@ -56,9 +54,7 @@
                 src: index == slideIndex ? `${folderDir}/active.png` : `${folderDir}/inactive.png`,
                 width: index == slideIndex ? '20px' : '15px',
             });
-            img.on("click", function() {
-                next(index);
-            });
+
             img.appendTo($('#trackerIcons'));
         })
     }
@@ -71,38 +67,3 @@
             child = parent.lastElementChild;
         }
     }
-
-    // function initCardData() {
-    //     // Card Data
-    //     const cardData = [{
-    //             icon: `${folderDir}/arrow-right.png`,
-    //             text: 'the visio',
-    //             span: 'difference'
-    //         },
-    //         {
-    //             icon: `${folderDir}/arrow-right.png`,
-    //             text: 'meet the',
-    //             span: 'visio team'
-    //         },
-    //         {
-    //             icon: `${folderDir}/arrow-right.png`,
-    //             text: 'our funds and',
-    //             span: 'investments'
-    //         }
-    //     ];
-
-    //     cardData.forEach((currentCard, index) => {
-    //         let img = $('<div></div>', {
-    //             id: `slide-${index}`,
-    //             class: index == slideIndex ? 'pointer active-slide' : 'pointer',
-    //             // src: index == slideIndex ? `${folderDir}/active.png` : `${folderDir}/inactive.png`,
-    //             // width: index == slideIndex ? '20px' : '15px',
-    //         });
-    //         img.on("click", function() {
-    //             next(index);
-    //         });
-    //         img.appendTo($('#trackerIcons'));
-    //     })
-    // }
-
-    document.querySelector("#trackerIcons").addEventListener("click", next)
