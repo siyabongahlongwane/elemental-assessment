@@ -20,7 +20,7 @@
     width: 86%;
   }
   .slide-wrapper .track-icons {
-    bottom: 0;
+    bottom: -10px !important;
   }
   .blue-banner {
     height: 20%;
@@ -44,7 +44,6 @@
     width: 93%;
   }
 }
-/* Modern Android Devices*/
 @media (min-width: 600px) and (max-width: 1000px) {
   .navy-card-wrapper,
   .intro-container {
