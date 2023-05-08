@@ -17,10 +17,13 @@
             }
         }
         .slide-wrapper {
+            #slide {
+                height: 200px;
+            }
             height: auto;
             width: 86%;
             .track-icons {
-                bottom: -10px !important;
+                bottom: -5px !important;
             }
         }
         .blue-banner {

@@ -19,8 +19,11 @@
     height: auto;
     width: 86%;
   }
+  .slide-wrapper #slide {
+    height: 200px;
+  }
   .slide-wrapper .track-icons {
-    bottom: -10px !important;
+    bottom: -5px !important;
   }
   .blue-banner {
     height: 20%;
